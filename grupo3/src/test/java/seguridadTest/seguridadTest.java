@@ -7,10 +7,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import ddsCalculadora.Calculadora;
+import seguridad.*;
 
 
-public class Seguridadtest {
+/*public class seguridadtest {
 
 	private User juan;
 	
@@ -20,3 +20,4 @@ public class Seguridadtest {
 		assertTrue(juan.loguearse());		
 	}
 }
+*/

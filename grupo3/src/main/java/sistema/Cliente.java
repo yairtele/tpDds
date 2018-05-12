@@ -11,6 +11,10 @@ public class Cliente {
 	private int fechaServicio;
 	private List<Domicilio> domicilios = new ArrayList<Domicilio>();
 	
+	public List<Domicilio> domicilios() {
+		return domicilios;
+	}
+	
 	public boolean algunDispositivoEncendido(Domicilio domi){
 		return domi.algunDispositivoEncendido();
 	}
@@ -27,8 +31,8 @@ public class Cliente {
 		return domi.cantTotal();
 	}
 	
-	public void altaDomicilio(String domicilio) {
-		domicilios.add(new Domicilio(domicilio));
+	public void altaDomicilio(Domicilio domicilio) {
+		domicilios.add(domicilio);
 	}
 	
 	public void eliminarDomicilio(Domicilio domi) {

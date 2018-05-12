@@ -16,6 +16,10 @@ public class Domicilio {
 		nombre = domicilio;
 	}
 
+	public List<Dispositivo> dispositivos() {
+		return dispositivos;
+	}
+	
 	public boolean algunDispositivoEncendido() {
 		Iterator<Dispositivo> dispositivo = dispositivos.iterator();
 		while(dispositivo.hasNext()) {
@@ -50,8 +54,8 @@ public class Domicilio {
 		return consumo;
 	}
 	
-	public void altaDispositivo(String nombre, int consumo) {
-		dispositivos.add(new Dispositivo(nombre,consumo));
+	public void altaDispositivo(Dispositivo dispositivo) {
+		dispositivos.add(dispositivo);
 	}
 	
 	public void modificarDispositivos() {
